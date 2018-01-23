@@ -13,7 +13,7 @@ namespace Penyewaan_Blueray
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View.pelangganFrm());
+            Application.Run(new View.mainFrm());
         }
     }
 }

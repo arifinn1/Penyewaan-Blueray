@@ -6,7 +6,7 @@ namespace Penyewaan_Blueray.Class
     {
         private int _kd;
         private String _judul;
-        private String _rilis;
+        private DateTime _rilis;
         private String _produksi;
         private String _genre;
         private int _jml_stok;
@@ -16,7 +16,7 @@ namespace Penyewaan_Blueray.Class
         {
             _kd = -1;
             _judul = String.Empty;
-            _rilis = String.Empty;
+            _rilis = DateTime.Now;
             _produksi = String.Empty;
             _genre = String.Empty;
             _jml_stok = 0;
@@ -35,7 +35,7 @@ namespace Penyewaan_Blueray.Class
             set { _judul = value; }
         }
 
-        public String Rilis
+        public DateTime Rilis
         {
             get { return _rilis; }
             set { _rilis = value; }

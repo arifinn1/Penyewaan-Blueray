@@ -48,7 +48,7 @@ namespace Penyewaan_Blueray.View
         {
             if (e.RowIndex > -1)
             {
-                sel_kode = Convert.ToInt16(dgv_pelanggan.Rows[e.RowIndex].Cells[0].Value);
+                sel_kode = Convert.ToInt32(dgv_pelanggan.Rows[e.RowIndex].Cells[0].Value);
                 lb_kd.Text = dgv_pelanggan.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txt_nik.Text = dgv_pelanggan.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txt_nama.Text = dgv_pelanggan.Rows[e.RowIndex].Cells[2].Value.ToString();

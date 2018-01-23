@@ -13,6 +13,12 @@ namespace Penyewaan_Blueray.Class
             return dbServ.ExecQuery(dbServ.Query);
         }
 
+        public DataTable TampilSewa(String nama)
+        {
+            dbServ.Query = "select * from pelanggan where nama like'%" + nama + "%' and kd not in(select kd_pel from sewa where tgl_pengembalian is null)";
+            return dbServ.ExecQuery(dbServ.Query);
+        }
+
         public int KodeGen()
         {
             dbServ.Query = "select (isnull(max(kd), 0)+1) as kode from pelanggan";
